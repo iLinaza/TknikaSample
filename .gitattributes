@@ -1,0 +1,121 @@
+# Line endings
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text eol=crlf
+
+# Always LF (mainly script files to be executed on linux shell)
+*.sh text eol=lf
+.shellcheckrc eol=lf
+
+# jboss cli scripting engine
+*.cli text eol=lf
+
+# Unity generated files
+*.meta text eol=lf
+*.spriteatlas text eol=lf
+*.shader text eol=lf
+*.unity text eol=lf
+*.prefab text eol=lf
+*.playable text eol=lf
+*.cginc text eol=lf
+*.bundle text eol=lf
+*.mat text eol=lf
+*.mtl text eol=lf
+csc.rsp text eol=lf
+
+# Other files that should be LF for cross platform compatibility
+*.asmdef text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.php text eol=lf
+*.yml text eol=lf
+*.npmrc text eol=lf
+
+# Small binaries not considered LFS
+*.bmp -text
+*.ico -text
+
+## Non Windows binaries
+lib*.a -text
+lib*.o -text
+lib*.so -text
+
+## Fonts
+*.ttf -text
+
+# Extensions handled as LFS
+## 3D Models
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.obj filter=lfs diff=lfs merge=lfs -text
+*.spp filter=lfs diff=lfs merge=lfs -text
+*.mb filter=lfs diff=lfs merge=lfs -text
+*.max filter=lfs diff=lfs merge=lfs -text
+
+## Images
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.tga filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+*.aar filter=lfs diff=lfs merge=lfs -text
+*.hdr filter=lfs diff=lfs merge=lfs -text
+*.psb filter=lfs diff=lfs merge=lfs -text
+*.exr filter=lfs diff=lfs merge=lfs -text
+*.eps filter=lfs diff=lfs merge=lfs -text
+*.ai filter=lfs diff=lfs merge=lfs -text
+*.svg filter=lfs diff=lfs merge=lfs -text
+*.gif filter=lfs diff=lfs merge=lfs -text
+*.pdf filter=lfs diff=lfs merge=lfs -text
+
+## Substances
+*.sbs filter=lfs diff=lfs merge=lfs -text
+*.sbsar filter=lfs diff=lfs merge=lfs -text
+
+## Blueprints and 3D CAD models
+*.dwg filter=lfs diff=lfs merge=lfs -text
+*.dxf filter=lfs diff=lfs merge=lfs -text
+*.igs filter=lfs diff=lfs merge=lfs -text
+*.stp filter=lfs diff=lfs merge=lfs -text
+*.3dm filter=lfs diff=lfs merge=lfs -text
+*.ztl filter=lfs diff=lfs merge=lfs -text
+*.iam filter=lfs diff=lfs merge=lfs -text
+*.ipt filter=lfs diff=lfs merge=lfs -text
+
+## Videos
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mkv filter=lfs diff=lfs merge=lfs -text
+*.mov filter=lfs diff=lfs merge=lfs -text
+*.avi filter=lfs diff=lfs merge=lfs -text
+
+## Audios
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+
+## Compressed files
+*.tgz filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.gz filter=lfs diff=lfs merge=lfs -text
+*.7z filter=lfs diff=lfs merge=lfs -text
+*.rar filter=lfs diff=lfs merge=lfs -text
+
+## Binaries
+*.exe filter=lfs diff=lfs merge=lfs -text
+*.dll filter=lfs diff=lfs merge=lfs -text
+*.msi filter=lfs diff=lfs merge=lfs -text
+*.pdb filter=lfs diff=lfs merge=lfs -text
+*.mdb filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.jar filter=lfs diff=lfs merge=lfs -text
+
+## Unity3D
+*.unitypackage filter=lfs diff=lfs merge=lfs -text
+*.resS filter=lfs diff=lfs merge=lfs -text
+*.resource filter=lfs diff=lfs merge=lfs -text
+*resources.assets filter=lfs diff=lfs merge=lfs -text
+*.bytes filter=lfs diff=lfs merge=lfs -text
+LightingData.asset filter=lfs diff=lfs merge=lfs -text
+
+## Other known binary files
+*.db filter=lfs diff=lfs merge=lfs -text
+*.pfx filter=lfs diff=lfs merge=lfs -text
+*.cer filter=lfs diff=lfs merge=lfs -text
