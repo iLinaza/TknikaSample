@@ -8,7 +8,7 @@ namespace VirooLab.Examples
     public class CallActionOnStart : MonoBehaviour
     {
         [SerializeField]
-        private List<ObjectAction> actions = default;
+        //private List<ObjectAction> actions = default;
 
 
         private void Start()
