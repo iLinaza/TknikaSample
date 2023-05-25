@@ -1,1 +1,3 @@
-Licencia
+Licencia. bla bla bla
+
+Licencia MIT.
